@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DotGothic16", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  color: 800080;
+}
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: 800080;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: 1;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.initial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.initial-title {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.initial-sub {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.intro-btn {
+  margin-top: 50px;
+  cursor: pointer;
+  padding: 15px 30px;
+  border: 100;
+  border-radius: 3px;
+}
+
+.intro-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.easter-egg {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.easter-text {
+  font-size: small;
+  margin-right: 10px;
+}
