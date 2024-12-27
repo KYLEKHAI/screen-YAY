@@ -23,12 +23,12 @@
   font-size: 30px;
   text-decoration: none;
   font-weight: 700;
-  color: 800080;
+  color: rgb(97, 34, 104);
 }
 .navbar a {
   position: relative;
-  font-size: 18px;
-  color: 800080;
+  font-size: 20px;
+  color: rgb(97, 34, 104);
   font-weight: 500;
   text-decoration: none;
   margin-left: 40px;
