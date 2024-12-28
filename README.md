@@ -35,6 +35,9 @@
  <tr>
 </table>
 
+## Installation
+
+No intstallation needed -- just open the following link: https://screen-yay.netlify.app/
 ## License
 
 This project is licensed under the MIT License.
