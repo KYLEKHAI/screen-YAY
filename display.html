@@ -54,6 +54,42 @@
             alt="settings--v2"
           />
         </button>
+        <div id="settings-modal" class="modal hidden">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Settings</h2>
+            <div class="file-container">
+              <div class="file-buttons">
+                <input
+                  type="file"
+                  id="file-input"
+                  accept="image/*,video/*"
+                  style="display: none"
+                />
+                <button class="pushable" id="file-choose">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <span class="front">Choose File</span>
+                </button>
+                <button class="pushable" id="folder-choose">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <span class="front">Choose Folder</span>
+                </button>
+              </div>
+              <p id="file-name">No file selected</p>
+            </div>
+            <div class="switch-options">
+              <label class="switch" id="Display Clock">
+                <input class="toggle" type="checkbox" />
+                <span class="slider"></span>
+                <span class="card-side"></span>
+              </label>
+              <p class="switch-text">No Clock</p>
+            </div>
+            <button class="save-btn close-modal">Close</button>
+          </div>
+        </div>
       </div>
     </main>
     <script src="/assets/clock.js" defer></script>
