@@ -7,6 +7,8 @@
   font-style: normal;
 }
 
+/* INDEX */
+
 .header {
   position: fixed;
   top: 0;
@@ -91,4 +93,120 @@
   font-size: small;
   margin-right: 10px;
   margin-left: 5px;
+}
+
+/* ABOUT */
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.wrapper .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.container .about-image {
+  margin-top: 60px;
+}
+
+.container .about-image img {
+  height: 250px;
+  width: 250px;
+  border: 8px solid black;
+  border-radius: 50%;
+}
+
+.container .article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.container .article h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.container .article span {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(45, 165, 105);
+}
+
+.container .article p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px 0px;
+  line-height: 1.5;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+/* From Uiverse.io by Pradeepsaranbishnoi */
+.social-links,
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: "Titillium Web", sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
+}
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
+}
+
+#linkedin span {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
 }
