@@ -227,3 +227,31 @@ function navigateFiles(event) {
 }
 
 document.addEventListener("keydown", navigateFiles);
+
+// Change toggle for fill and repeat
+const fillToggle = document.querySelector("#fill-cover .toggle");
+const repeatToggle = document.querySelector("#repeat .toggle");
+
+const body = document.getElementById("display-page");
+
+// Upgrade based on changes from the toggle input
+function updateBackgroundSettings() {
+  if (fillToggle.checked) {
+    body.style.backgroundSize = "cover";
+  } else {
+    body.style.backgroundSize = "auto";
+  }
+
+  if (repeatToggle.checked) {
+    body.style.backgroundRepeat = "repeat";
+  } else {
+    body.style.backgroundRepeat = "no-repeat";
+  }
+}
+
+fillToggle.addEventListener("change", updateBackgroundSettings);
+repeatToggle.addEventListener("change", updateBackgroundSettings);
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateBackgroundSettings();
+});
