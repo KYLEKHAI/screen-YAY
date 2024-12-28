@@ -160,8 +160,8 @@
 }
 
 .container .about-image img {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   border: 8px solid black;
   border-radius: 50%;
 }
@@ -189,7 +189,7 @@
 }
 
 .container .article p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px 0px;
   line-height: 1.5;
@@ -580,7 +580,7 @@
 #file-name {
   font-size: 14px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .time-interval-container {
