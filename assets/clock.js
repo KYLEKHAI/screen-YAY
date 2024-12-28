@@ -92,12 +92,15 @@ window.addEventListener("DOMContentLoaded", () => {
 // Remove the header (logo and navbar) when in full screen mode
 document.addEventListener("fullscreenchange", () => {
   const header = document.querySelector(".header");
+  const settingsBtn = document.getElementById("settings-btn");
   if (document.fullscreenElement) {
     fullscreenButton.setAttribute("data-tooltip", "Exit Full Screen");
     header.classList.add("hidden");
+    settingsBtn.classList.add("hidden");
   } else {
     fullscreenButton.setAttribute("data-tooltip", "View in Full Screen");
     header.classList.remove("hidden");
+    settingsBtn.classList.remove("hidden");
   }
 });
 
