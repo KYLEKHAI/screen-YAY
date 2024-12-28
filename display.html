@@ -63,7 +63,7 @@
                 <input
                   type="file"
                   id="file-input"
-                  accept="image/*,video/*"
+                  accept="image/*"
                   style="display: none"
                 />
                 <button class="pushable" id="file-choose">
@@ -98,6 +98,18 @@
                 <span class="card-side"></span>
               </label>
               <p class="switch-text">Repeat</p>
+            </div>
+            <div class="time-interval-container">
+              <label for="time-interval"
+                >Switch Image Time Interval (Folder)</label
+              >
+              <select id="time-interval">
+                <option value="0">Never</option>
+                <option value="30000">30 Seconds</option>
+                <option value="300000">5 Minutes</option>
+                <option value="1800000">30 Minutes</option>
+                <option value="3600000">1 Hour</option>
+              </select>
             </div>
             <button class="save-btn close-modal">Close</button>
           </div>

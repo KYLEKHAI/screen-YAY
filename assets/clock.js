@@ -255,3 +255,27 @@ repeatToggle.addEventListener("change", updateBackgroundSettings);
 document.addEventListener("DOMContentLoaded", () => {
   updateBackgroundSettings();
 });
+
+// Time interval for file from folder change
+let intervalId;
+const timeIntervalSelect = document.getElementById("time-interval");
+
+// Update the time interval
+function updateTimeInterval() {
+  const interval = parseInt(timeIntervalSelect.value, 10);
+
+  if (intervalId) {
+    clearInterval(intervalId);
+  }
+
+  // Set a new interval to change the image (not applicable to Never option)
+  if (interval > 0) {
+    intervalId = setInterval(() => {
+      currentIndex = (currentIndex + 1) % uploadedFiles.length;
+      displaySelectedFile();
+    }, interval);
+  }
+}
+
+timeIntervalSelect.addEventListener("change", updateTimeInterval);
+updateTimeInterval();
