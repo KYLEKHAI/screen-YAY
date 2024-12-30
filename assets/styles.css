@@ -621,7 +621,7 @@
   background-color: #555;
 }
 
-/* ------ uiverse pause button by: bbaginuk----- */
+/* ------ uiverse play/pause button by: bbaginuk----- */
 
 .container {
   --color: white;
@@ -672,4 +672,27 @@
   50% {
     transform: scale(1.1);
   }
+}
+
+#lofi-container.fullscreen-hidden {
+  display: none !important;
+}
+
+.radio-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease;
+}
+
+label.container:hover .radio-tooltip {
+  visibility: visible;
+  opacity: 1;
 }

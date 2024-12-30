@@ -312,3 +312,14 @@ document.addEventListener("DOMContentLoaded", () => {
     pauseIcon.style.display = "none";
   }
 });
+
+// Hide radio button in fullscreen
+document.addEventListener("fullscreenchange", () => {
+  const loFiContainer = document.getElementById("lofi-container");
+
+  if (document.fullscreenElement) {
+    loFiContainer.classList.add("fullscreen-hidden");
+  } else {
+    loFiContainer.classList.remove("fullscreen-hidden");
+  }
+});
