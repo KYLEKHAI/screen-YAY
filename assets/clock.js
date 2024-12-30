@@ -279,3 +279,36 @@ function updateTimeInterval() {
 
 timeIntervalSelect.addEventListener("change", updateTimeInterval);
 updateTimeInterval();
+
+// Play or stop lofi radio
+document.addEventListener("DOMContentLoaded", () => {
+  const playPauseBtn = document.querySelector(
+    '.container input[type="checkbox"]'
+  );
+  const playIcon = document.querySelector(".play");
+  const pauseIcon = document.querySelector(".pause");
+  const lofiPlayer = document.getElementById("lofi-radio");
+
+  playPauseBtn.addEventListener("change", function () {
+    if (playPauseBtn.checked) {
+      playIcon.style.display = "none";
+      pauseIcon.style.display = "block";
+      lofiPlayer.src = "https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1";
+      lofiPlayer.style.width = "0";
+      lofiPlayer.style.height = "0";
+      lofiPlayer.style.visibility = "hidden";
+    } else {
+      playIcon.style.display = "block";
+      pauseIcon.style.display = "none";
+      lofiPlayer.src = "";
+    }
+  });
+
+  if (playPauseBtn.checked) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "block";
+  } else {
+    playIcon.style.display = "block";
+    pauseIcon.style.display = "none";
+  }
+});
