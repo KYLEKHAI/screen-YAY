@@ -35,6 +35,16 @@
  <tr>
 </table>
 
+## Installation
+
+No intstallation needed -- just open the following link: https://screen-yay.netlify.app/
+
+## Future Updates
+- Include video files
+- Pomodoro timer
+- Audio Visuallizers
+- Audio/Radio integration
+  
 ## License
 
 This project is licensed under the MIT License.
