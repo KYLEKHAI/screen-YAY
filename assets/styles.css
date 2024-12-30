@@ -464,17 +464,28 @@
 }
 
 .switch-options {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 20px;
+}
+
+.switch-options .switch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.switch-options .switch-container:nth-child(4) {
+  grid-column: span 3;
+  align-items: center;
 }
 
 .switch-text {
   font-size: 16px;
   color: var(--font-color);
   margin: 0;
+  margin-top: 10px;
 }
 
 .pushable {
@@ -695,4 +706,31 @@
 label.container:hover .radio-tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+.settings-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease;
+}
+
+#settings-btn:hover .settings-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+#clock.clean-font {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }

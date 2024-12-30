@@ -12,6 +12,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>screen-YAY</title>
 
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -53,6 +60,7 @@
             src="https://img.icons8.com/fluency-systems-regular/48/settings--v2.png"
             alt="settings--v2"
           />
+          <span class="settings-tooltip">Settings / Options</span>
         </button>
         <div id="lofi-container">
           <label class="container" data-tooltip="Play Radio">
@@ -119,25 +127,43 @@
               <p id="file-name">No file selected</p>
             </div>
             <div class="switch-options">
-              <label class="switch" id="Display Clock">
-                <input class="toggle" type="checkbox" />
-                <span class="slider"></span>
-                <span class="card-side"></span>
-              </label>
-              <p class="switch-text">No Clock</p>
-              <label class="switch" id="fill-cover">
-                <input class="toggle" type="checkbox" />
-                <span class="slider"></span>
-                <span class="card-side"></span>
-              </label>
-              <p class="switch-text">Fill</p>
-              <label class="switch" id="repeat">
-                <input class="toggle" type="checkbox" />
-                <span class="slider"></span>
-                <span class="card-side"></span>
-              </label>
-              <p class="switch-text">Repeat</p>
+              <div class="switch-container">
+                <label class="switch" id="Display Clock">
+                  <input class="toggle" type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="card-side"></span>
+                </label>
+                <p class="switch-text">No Clock</p>
+              </div>
+
+              <div class="switch-container">
+                <label class="switch" id="fill-cover">
+                  <input class="toggle" type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="card-side"></span>
+                </label>
+                <p class="switch-text">Fill</p>
+              </div>
+
+              <div class="switch-container">
+                <label class="switch" id="repeat">
+                  <input class="toggle" type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="card-side"></span>
+                </label>
+                <p class="switch-text">Repeat</p>
+              </div>
+
+              <div class="switch-container">
+                <label class="switch" id="font-toggle">
+                  <input class="toggle" type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="card-side"></span>
+                </label>
+                <p class="switch-text">Clean Clock</p>
+              </div>
             </div>
+
             <div class="time-interval-container">
               <label for="time-interval"
                 >Switch Image Time Interval (Folder)</label
@@ -150,6 +176,7 @@
                 <option value="3600000">1 Hour</option>
               </select>
             </div>
+
             <button class="save-btn close-modal">Close</button>
           </div>
         </div>

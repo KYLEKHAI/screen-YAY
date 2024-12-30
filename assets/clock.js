@@ -323,3 +323,23 @@ document.addEventListener("fullscreenchange", () => {
     loFiContainer.classList.remove("fullscreen-hidden");
   }
 });
+
+// Clean clock toggle (changes the font from Dotgothic16 to Rubik)
+document.addEventListener("DOMContentLoaded", () => {
+  const fontToggle = document.querySelector("#font-toggle .toggle");
+  const clockElement = document.getElementById("clock");
+
+  fontToggle.addEventListener("change", function () {
+    if (fontToggle.checked) {
+      clockElement.classList.add("clean-font");
+    } else {
+      clockElement.classList.remove("clean-font");
+    }
+  });
+
+  if (clockElement.classList.contains("clean-font")) {
+    fontToggle.checked = true;
+  } else {
+    fontToggle.checked = false;
+  }
+});
