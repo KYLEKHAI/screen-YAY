@@ -1,5 +1,9 @@
 # screen-YAY
 
+```
+screen-YAY: your GO-TO customizable web display
+```
+
 **screen-YAY** is a customizable screensaver application that allows users to display their own images and GIFs for a personalized aesthetic experience. Whether for deep studying sessions or to just show off desk setups, screen-YAY can do it!
 
 ## Features
@@ -9,6 +13,7 @@
 3. **Navigate Images**: Use the left and right arrow keys to manually switch images within a folder.
 4. **Fullscreen Mode**: Click the fullscreen icon in the bottom right to enter fullscreen mode to fully enter zen mode.
 5. **Realtime Clock**: Switch the toggle to display the local time in your system.
+6. **24/7 Lofi Radio**: Listen to soothing and chill beats provided by the Lofi Girl live stream: [lofi hip hop radio 📚 beats to relax/study to](https://www.youtube.com/live/jfKfPfyJRdk?si=r2N77nBpfN_8YR5o)
 
 ## Technologies/Resources Used
 
@@ -40,11 +45,12 @@
 No intstallation needed -- just open the following link: https://screen-yay.netlify.app/
 
 ## Future Updates
+
 - Include video files
 - Pomodoro timer
 - Audio Visuallizers
-- Audio/Radio integration
-  
+- More radio stations
+
 ## License
 
 This project is licensed under the MIT License.
