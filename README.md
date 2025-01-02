@@ -37,6 +37,10 @@ screen-YAY: your GO-TO customizable web display
       <td><img src="./images/SS3.png" width="300" height="auto"></td>
       <td><img src="./images/SS4.png" width="300" height="auto"></td>
     </tr>
+      <tr>
+      <td><img src="./images/SS5.png" width="300" height="auto"></td>
+      <td><img src="./images/SS6.png" width="300" height="auto"></td>
+    </tr>
  <tr>
 </table>
 
